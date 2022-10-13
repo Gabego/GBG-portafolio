@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 200px;
+}
+
+body {
+    text-align: center;
+    width: 90%;
+    margin: 20px 5%;
+    font-size: 16px;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+
+}
+.pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    align-items: center;
+}
+.name__name {
+    color: blue;
+}
+
+.title__container {
+    padding: 40px 0 30px 0;
+}
+.title {
+    background: blue;
+    color: white;
+    font-size: 1.2em ;
+    font-weight: 900;
+    padding: 8px 5px;
+}
+.about_info {
+    text-align: justify;
+    padding-bottom: 15px;
+}
+.experience__job {
+    font-size: 20px;
+    font-weight: 700;
+}
+.portafolio__title {
+    font-size: 20px;
+    font-weight: 700;
+}
+.portafolio__item {
+    padding: 20px;
+}
+.tecnoligias__title {
+    font-size: 1.4em;
+    color: blue;
+    border: 2px solid blue;
+    margin-bottom:20px;
+    margin-top: 20px;
+}
+
+.tecnologias1__img {
+    width: 150px;
+    padding: 10px 20px;
+}
+
+.tecnologias2__img {
+    width: 150px;
+    padding: 10px 20px;
+}
+
+.tecnologias3__img {
+    width: 150px;
+    padding: 10px 20px;
+}
+.idiomas__container {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+.idiomas_spanish {
+    padding: 40px;
+}
+.idiomas__english {
+    padding: 40px;
+}
+.idiomas__img {
+    height: 12px;
+}
+.contacto__container {
+    font-size: 18px;
+    font-weight: 600;
+}
+.contacto__img {
+    width: 100px;
+}
+.contacto__item {
+    padding-bottom: 40px;
+}
