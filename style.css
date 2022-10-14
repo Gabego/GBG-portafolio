@@ -77,17 +77,22 @@ body {
     width: 150px;
     padding: 10px 20px;
 }
-.idiomas__container {
+.idiomas__box {
+    padding: 20px 0;
+}
+
+/* .idiomas__container {
     font-size: 20px;
     font-weight: 700;
     text-align: left;
+} */
+
+.idiomas__box-title {
+    font-size: 24px;
+    font-weight: 700; 
+    padding: 10px;
 }
-.idiomas_spanish {
-    padding: 40px;
-}
-.idiomas__english {
-    padding: 40px;
-}
+
 .idiomas__img {
     height: 12px;
 }
@@ -100,4 +105,105 @@ body {
 }
 .contacto__item {
     padding-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    body {
+        text-align: center;
+        width: 80%;
+        margin: 20px 10%;
+        font-size: 18px;
+    }
+    .title {
+        background: blue;
+        color: white;
+        font-size: 1.6em ;
+        font-weight: 900;
+        padding: 8px 5px;
+    }
+    .experience__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .experince__ericsson {
+       width: 300px;
+    }
+    .portafolio__container {
+        display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+       justify-content: center;
+       gap: 10px;
+     
+    }
+    .idiomas__container {
+        display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+       justify-content: center;
+       gap: 60px;
+    }
+    
+    .contacto__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .contacto__item {
+        width: 200px;
+    }
+} 
+
+@media (min-width: 1024px) {
+    body {
+        text-align: center;
+        width: 78%;
+        max-width: 1200px;
+        margin: 20px auto;
+        font-size: 20px;
+        font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    }
+    .experience__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .experince__ericsson {
+       width: 300px;
+    }
+    .portafolio__container {
+        display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+       justify-content: center;
+       gap: 10px;
+     
+    }
+    .idiomas__container {
+        display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+       justify-content: center;
+       gap: 80px;
+     
+    }
+    .contacto__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
 }
