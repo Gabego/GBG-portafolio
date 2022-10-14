@@ -20,7 +20,7 @@ body {
     flex-direction: column;
 
 }
-.pic {
+.header__pic {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -114,12 +114,36 @@ body {
         margin: 20px 10%;
         font-size: 18px;
     }
+
     .title {
         background: blue;
         color: white;
         font-size: 1.6em ;
         font-weight: 900;
         padding: 8px 5px;
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__item {
+        width: 40%;
+        align-items: center;
+    }
+    .header__pic {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    .name {
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .profession {
+        font-size: 20px;
+        font-weight: 600;
     }
     .experience__container {
         display: flex;
@@ -169,6 +193,27 @@ body {
         margin: 20px auto;
         font-size: 20px;
         font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .header__item {
+        width: 40%;
+        align-items: center;
+    }
+    .header__pic {
+        width: 300px;
+        height: 300px;
+    }    .name {
+        font-size: 30px;
+        font-weight: 800;
+    }
+    .profession {
+        font-size: 25px;
+        font-weight: 700;
     }
     .experience__container {
         display: flex;
