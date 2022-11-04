@@ -2,22 +2,28 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/jpg" href="./assets/pi-favicon.jpg" />
-  <title>Gabriel Bello</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Efecto Particulas</title>
 </head>
 
-<body class="body__container">
+<body>
+
+  <div id="particles-js">
+
+  </div>
+  <div class="particles__normal"></div>
 
   <!-- SECCION BARRA DE NAVEGACION -->
-  <header class="header" id="header"> 
-        <div class="icono__menu open__menu-modal">
-        <i class="bx bx-menu"></i>
-      </div>
+  <header class="header__nav" id="header">
+    <div class="icono__menu open__menu-modal">
+      <i class="bx bx-menu"></i>
+    </div>
+    <div class="btn__dm">
+      <div class="btn__dm-text btn__dm-text-dm"></div>
+    </div>
     <nav class="modal__menu">
 
       <!-- <a href="#" class="van__logo">Academlo</a> -->
@@ -25,6 +31,7 @@
       <div class="icono__menu modal__menu-close">
         <i class="bx bx-x"></i>
       </div>
+
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
@@ -34,102 +41,158 @@
             <a class="nav__link" href="#acerca">Acerca de mi</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#experiencia">Experiencia Laboral</a>
+            <a class="nav__link" href="#habilidades">Habilidades</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#portafolio">Portafolio</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#conocimientos">Conocimientos</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#idiomas">Idiomas</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>
-
-
     </nav>
   </header>
 
-<!-- SECCION ENCABEZADO -->
-  <section id=home class="header2 section">
-    <div class="header__item">
-      <img class="header__pic" src="./assets/GBG.jpg" alt="" />
-    </div>
-    <div class="header__item">
-      <div class="name">
-        <h2 class="name__soy">Soy</h2>
-        <h1 class="name__name">Gabriel Bello</h1>
+  <!-- SECCION HOME -->
+  <section id=home class="home__data section">
+
+    <div class="home__item">
+      <img class="home__pic" src="./assets/GBG.jpg" alt="" />
+      <div>
+        <button class="home__in">
+          <a class="home__in-link" href="https://www.linkedin.com/in/gabrielbellogonzalez/" target="_blank">in</a>
+        </button>
+        <button class="home__cv">
+          <a class="home__cv-link" href="./assets/CV-GabrielBello-31Oct.pdf" target="_blank">cv</a>
+        </button>
+        <!-- <button class="home__in">in</button>
+                    <button class="home__cv">cv</button> -->
       </div>
-      <div class="profession">
-        <h4 class="profession__1">Ing. Electrónico</h3>
-          <h4 class="profession__2">Desarrollador Web Junior</h4>
+    </div>
+    <div class="home__item home__item-data">
+      <div class="home__name">
+        <h2 class="home__name-soy">Soy</h2>
+        <h1 class="home__name-name">Gabriel Bello</h1>
+      </div>
+      <div class="home__profession">
+        <h4 class="home__profession-2">Desarrollador Web Junior</h4>
+        <h4 class="home__profession-1">Ing. Electrónico</h3>
+
       </div>
     </div>
   </section>
 
-<!-- SECCION ABOUT -->
+
+  <!-- SECCION ABOUT -->
   <section id=acerca class="about section">
-    <div class="title__container">
-      <p class="title">Acerca de mí</p>
-    </div>
     <div class="about__container">
-      <div class="about_info">
+      <p class="about__title">Acerca de mí</p>
+    </div>
+    <div class="about__container-text">
+      <div class="about__info">
         Persona emprendedora, autodidacta y proactiva, buscando siempre el
         crecer en todos los aspectos de mi vida.
       </div>
-      <div class="about_info">
+      <div class="about__info">
         Ingeniero Electrónico. Actualmente me encuentro mejorando y aprendiendo
         lenguajes de programación, para desarrollarme como programador web
         full Stack.
       </div>
-      <div class="about_info">
+      <div class="about__info">
         Por mi carácter activo en querer aprender más, he sido instructor de
         tecnologías de punta, lo que me ha permitido aprender y afianzar los
         conocimientos adquiridos, alcanzando una comunicación clara, con
         excelentes relaciones interpersonales.
       </div>
-      <div class="about_info">
+      <div class="about__info">
         Experiencia a nivel internacional trabajando en la gran mayoría de
         países de Latinoamérica, las islas del Caribe, en algunos paises de
         Europa y en Estados Unidos, logrando acomplarme facilmente en diferentes
         culturas para trabajar en grupo.
       </div>
-      <div class="about__cv-container">
-        <a class="about__cv" href="./assets/HV-GBG.pdf" target="_blank">Descargar CV</a>
-      </div>
+
     </div>
   </section>
 
-  <!-- SECCION EXPERIENCIA -->
-  <section id=experiencia class="experience section">
+
+  <!-- SECCION HABILIDADES -->
+  <section id=habilidades class="tecnologias section">
     <div class="title__container">
-      <p class="title">Experiencia Laboral</p>
+      <p class="skils__title">Habilidades</p>
     </div>
-    <div class='experience__jobs-container'>
-      <div class="experience__marconi">
-        <img class="experiencie__img2" src="./assets/marconi-gbg.png" alt="Marconi" />
-        <p class="experience__job">Optical Networks Team Leader</p>
-        <button class="open__marconi-modal">Info</button>
+    <div class="tecnologias__container">
+
+      <div id="slider1" class="tecnologias1__container">
+        <img class="tecnologias1__img" src="./assets/html5-gbg.png" alt="HTML5" />
+        <img class="tecnologias1__img" src="./assets/CSS-gbg.png" alt="CSS" />
+        <img class="tecnologias1__img" src="./assets/javascript-gbg.png" alt="JavaScript" />
+        <img class="tecnologias1__img" src="./assets/react-gbg.png" alt="React" />
+        <img class="tecnologias1__img" src="./assets/Assembler-gbg2.png" alt="Asambler" />
       </div>
 
-      <div class="experience__ericsson">
-        <img class="experiencie__img1" src="./assets/ericsson-gbg.png" alt="Ericsson" />
-        <p class="experience__job">Solution Architect</p>
-        <button class="open__ericsson-modal">Info</button>
+
+      <div id="slider2" class="tecnologias2__container tecno__slider">
+        <img class="tecnologias2__img" src="./assets/windows-gbg2.png" alt="Windows" />
+        <img class="tecnologias2__img" src="./assets/MacOS-gbg.png" alt="MacOs" />
+        <img class="tecnologias2__img" src="./assets/linux-gbg2.png" alt="Linux" />
+        <img class="tecnologias2__img" src="./assets/unix-gbg2.png" alt="Unix" />
       </div>
+
+      <div id="slider3" class="tecnologias3__container tecno__slider">
+        <img class="tecnologias3__img" src="./assets/ai-gbg.png" alt="Illustrator" />
+        <img class="tecnologias3__img" src="./assets/ps-gbg.png" alt="PhotoShop" />
+        <img class="tecnologias3__img" src="./assets/corel-gbg2.png" alt="Corel Draw" />
+      </div>
+
+      <div id="slider4" class="idiomas__box">
+        <div class="idiomas__container-box">
+          <p class="idiomas__box-title">Español - Nativo</p>
+          <div class="idiomas__barra-container">
+            <div class="idiomas_cuadro idioma__lleno"></div>
+            <div class="idiomas_cuadro idioma__lleno"></div>
+            <div class="idiomas_cuadro idioma__lleno"></div>
+            <div class="idiomas_cuadro idioma__lleno"></div>
+            <div class="idiomas_cuadro idioma__lleno"></div>
+            <div class="idiomas_cuadro idioma__lleno"></div>
+          </div>
+        </div>
+
+        <div class="idiomas__container-box">
+          <p class="idiomas__box-title">Ingles - B2</p>
+          <div class="idiomas__barra-container">
+            <div class="idiomas_cuadro idioma__lleno"></div>
+            <div class="idiomas_cuadro idioma__lleno"></div>
+            <div class="idiomas_cuadro idioma__lleno"></div>
+            <div class="idiomas_cuadro idioma__lleno"></div>
+            <div class="idiomas_cuadro idioma__vacio"></div>
+            <div class="idiomas_cuadro idioma__vacio"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="slider__skils">
+      <div class="slider__btn">
+        <a href="#slider1">Lenguajes</a>
+      </div>
+      <div class="slider__btn">
+        <a href="#slider2">Sis. Operativos</a>
+      </div>
+      <div class="slider__btn">
+        <a href="#slider3">Diseño</a>
+      </div>
+      <div class="slider__btn">
+        <a href="#slider4">Idiomas</a>
+      </div>
+
     </div>
   </section>
 
-
-<!-- SECCION PORTAFOLIO -->
+  <!-- SECCION PORTAFOLIO -->
   <section id=portafolio class="portafolio section">
     <div class="title__container">
-      <p class="title">Portafolio</p>
+      <p class="portfolio__title">Portafolio</p>
     </div>
     <div class="portafolio__container">
 
@@ -137,7 +200,11 @@
         <p class="portafolio__title">Pokedex App</p>
         <a href="https://gbg-pokedex-app.netlify.app/" target="_blank">
           <div class="portafolio__img-p1">
-            <div class="portafolio__hover">Ingresa a la App</div>
+            <div class="portafolio__hover">
+              <div class="portafolio__hover-title">React - hoks - Consulta a API - Axios - Paginación</div>
+              <div class="portafolio__hover-comend">Busca tu pokemon preferido y aprende sus caracteristicas</div>
+              <div  class="portafolio__hover-link">Link App</div>
+            </div>
           </div>
         </a>
       </div>
@@ -146,111 +213,50 @@
         <p class="portafolio__title">Rick and Morty App</p>
         <a href="https://rick-and-morty-app-gbg.netlify.app/" target="_blank">
           <div class="portafolio__img-p2">
-            <div class="portafolio__hover">Ingresa a la App</div>
+            <div class="portafolio__hover">
+              <div class="portafolio__hover-title">React - hoks - Consulta a API - Axios</div>
+              <div class="portafolio__hover-comend">Encuentra todos los personajes de los mundos de Rick & Morty</div>
+              <div  class="portafolio__hover-link">Link App</div>
+            </div>
           </div>
         </a>
       </div>
+
 
       <div class="portafolio__item">
         <p class="portafolio__title">Clima App</p>
         <a href="https://weather-app-gbg.netlify.app/" target="_blank">
           <div class="portafolio__img-p3">
-            <div class="portafolio__hover">Ingresa a la App</div>
+            <div class="portafolio__hover">
+              <div class="portafolio__hover-title">React - hoks - Consulta a API - Axios</div>
+              <div class="portafolio__hover-comend">Aplicativo que te da el estado del clima en tu ubicación en tiempo real</div>
+              <div  class="portafolio__hover-link">Link App</div>
+            </div>
           </div>
         </a>
       </div>
+
 
       <div class="portafolio__item">
         <p class="portafolio__title">Citas App</p>
         <a href="https://react-gbg-g18-entrega1.netlify.app/" target="_blank">
           <div class="portafolio__img-p4">
-            <div class="portafolio__hover">Ingresa a la App</div>
+            <div class="portafolio__hover">
+              <div class="portafolio__hover-title">React - JSON - Random Color</div>
+              <div class="portafolio__hover-comend">Citas de personajes celebres en la historia</div>
+              <div  class="portafolio__hover-link">Link App</div>
+            </div>
           </div>
         </a>
       </div>
+
     </div>
   </section>
 
-
-<!-- SECCION CONOCIMIENTOS DE TECNOLOGIA -->
-  <section id=conocimientos class="tegnologias section">
-    <div class="title__container">
-      <p class="title">Conocimientos de Tecnologia</p>
-    </div>
-    <div class="tebnologias__container">
-      <div>
-        <p class="tecnoligias__title">Lenguajes de Programación</p>
-        <button class="open__lenguajes-modal">Info</button>
-        <div class="tegnologias1__container">
-          <img class="tecnologias1__img" src="./assets/html5-gbg.png" alt="HTML5" />
-          <img class="tecnologias1__img" src="./assets/CSS-gbg.png" alt="CSS" />
-          <img class="tecnologias1__img" src="./assets/javascript-gbg.png" alt="JavaScript" />
-          <img class="tecnologias1__img" src="./assets/react-gbg.png" alt="React" />
-          <img class="tecnologias1__img" src="./assets/Assembler-gbg2.png" alt="Asambler" />
-        </div>
-
-      </div>
-      <div>
-        <p class="tecnoligias__title">Sistemas Operativos</p>
-        <button class="open__so-modal">Info</button>
-        <div class="tegnologias2__container">
-          <img class="tecnologias2__img" src="./assets/windows-gbg2.png" alt="Windows" />
-          <img class="tecnologias2__img" src="./assets/MacOS-gbg.png" alt="MacOs" />
-          <img class="tecnologias2__img" src="./assets/linux-gbg2.png" alt="Linux" />
-          <img class="tecnologias2__img" src="./assets/unix-gbg2.png" alt="Unix" />
-        </div>
-        <div>
-          <p class="tecnoligias__title">Programas de Diseño</p>
-          <button class="open__diseño-modal">Info</button>
-          <div class="tegnologias3__container">
-            <img class="tecnologias3__img" src="./assets/ai-gbg.png" alt="Illustrator" />
-            <img class="tecnologias3__img" src="./assets/ps-gbg.png" alt="PhotoShop" />
-            <img class="tecnologias3__img" src="./assets/corel-gbg2.png" alt="Corel Draw" />
-          </div>
-        </div>
-      </div>
-  </section>
-
-
-<!-- SECCION IDIOMAS -->
-  <section id=idiomas class="idiomas section">
-    <div class="title__container">
-      <p class="title">Idiomas</p>
-      <button class="open__idiomas-modal">Info</button>
-    </div>
-    <div class="idiomas__box">
-      <div class="idiomas__container-box">
-        <p class="idiomas__box-title">Español - Nativo</p>
-        <div class="idiomas__barra-container">
-          <div class="idiomas_cuadro idioma__lleno"></div>
-          <div class="idiomas_cuadro idioma__lleno"></div>
-          <div class="idiomas_cuadro idioma__lleno"></div>
-          <div class="idiomas_cuadro idioma__lleno"></div>
-          <div class="idiomas_cuadro idioma__lleno"></div>
-          <div class="idiomas_cuadro idioma__lleno"></div>
-        </div>
-      </div>
-
-      <div class="idiomas__container-box">
-        <p class="idiomas__box-title">Ingles - B2</p>
-        <div class="idiomas__barra-container">
-          <div class="idiomas_cuadro idioma__lleno"></div>
-          <div class="idiomas_cuadro idioma__lleno"></div>
-          <div class="idiomas_cuadro idioma__lleno"></div>
-          <div class="idiomas_cuadro idioma__lleno"></div>
-          <div class="idiomas_cuadro idioma__vacio"></div>
-          <div class="idiomas_cuadro idioma__vacio"></div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-
-
-<!-- SECCION CONTACTO -->
+  <!-- SECCION CONTACTO -->
   <section id=contacto class="contacto section">
     <div class="title__container">
-      <p class="title">Contacto</p>
+      <p class="contacto__title">Contacto</p>
     </div>
     <div class="contacto__container">
       <div class="contacto__item">
@@ -278,105 +284,9 @@
     </div>
   </section>
 
-
-  <!-- SECCION DE MODALES  -->
-  <section class="modal__marconi">
-    <div class="modal__container">
-      <div class="modal__marconi-text">
-        <span class="modal__title-job">Marconi de Colombia</span>
-        <ul>
-          <li>✔ Lider de proyectos en campo, manejando ingenieros a mi cargo para coordinar las
-            instalación y actualizacion de redes con mas de 300 elementos de red con trafico activo.</li>
-          <li>✔ Planeación para el desarrollo de proyectos en latino America, dando soporte al
-             departamento de ventas.</li>
-          <li>✔ Responsable de clientes clave para la empresa, como soporte de primera y segunda linea,
-             con niveles de respuesta menores a 1 hora.</li>
-        </ul>
-        <a href="#" class="modal__marconi-close">Close</a>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="modal__ericsson">
-    <div class="modal__container">
-      <div class="modal__ericsson-text">
-        <span class="modal__title-job">Ericsson de Colombia</span>
-        <ul>
-          <li>✔ Intructor Flex Trainer para tecnologias de redes de fibra optica,
-            dictando mas de 100 cursos a clientes en latino Amrica y las Islas del Caribede,
-            tanto en español como en Ingles</li>
-          <li>✔ Lider de campo en proyectos de instalacion y actualización con un equipo de 10 ingenieros
-            a mi cargo en redes de mas de 300 elementos de red.</li>
-          <li>✔ Como especialista en redes opticas fui solicitado para apoyar contratos en Inglaterra, USA y Turkia con
-            mas de 10 clientes.
-        </ul>
-        <a href="#" class="modal__ericsson-close">Close</a>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="modal__so">
-    <div class="modal__container">
-      <div class="modal__so-text">
-        <span class="modal__title-job">Programas de Diseño</span>
-        <ul>
-          <li>✔ Como ingeniero en telecomunicaciones tuve que aprender a instalar y 
-            hacer mantenimiento a sistemas de gestión que venían en todos los sistemas 
-            que conozco.</li>
-        </ul>
-        <a href="#" class="modal__so-close">Close</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="modal__lenguajes">
-    <div class="modal__container">
-      <div class="modal__lenguajes-text">
-        <span class="modal__title-job">Programas de Diseño</span>
-        <ul>
-          <li>✔ HTML - CSS - JavaScript: Academlo Agosto - Septiembre de 2022.</li>
-          <li>✔ React: Academlo Septiembre - Octubre de 2022.</li>
-          <li>✔ Assembler: Como estudiante de ingenieria en la universidad y proyectos.</li>
-        </ul>
-        <a href="#" class="modal__lenguajes-close">Close</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="modal__diseño">
-    <div class="modal__container">
-      <div class="modal__diseño-text">
-        <span class="modal__title-job">Programas de Diseño</span>
-        <ul>
-          <li>✔ De forma autodidacta he aprendido programas que me ayudan a realizar
-             en general mi trabajo, ya que soy una persona que le gusta estar aprendiendo 
-             cada día un poco mas.</li>
-        </ul>
-        <a href="#" class="modal__diseño-close">Close</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="modal__idiomas">
-    <div class="modal__container">
-      <div class="modal__idiomas-text">
-        <span class="modal__title-job">Idiomas</span>
-        <ul>
-          <li>✔ Colombiano, por lo que mi lengua materna es el español.</li>
-          <li>✔ He podido trabajar en Inglaterra como en Estados Unidos como ingeniero, por lo que mi nivel 
-            de comunicación es bueno en Ingles.</li>
-          <li>✔ He dictado cursos tanto en español como en Ingles</li>
-        </ul>
-        <a href="#" class="modal__idiomas-close">Close</a>
-      </div>
-
-    </div>
-  </section>
-
-
   <script src="./js/main.js"></script>
+  <script src="./js/particles.min.js"></script>
+  <script src="./js/particlesjs-config.json"></script>
 </body>
 
 </html>

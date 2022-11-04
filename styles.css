@@ -1,0 +1,485 @@
+/*- Configracion de variables -*/
+:root {
+    /*- COLORES PAGINA -*/
+    --color-negro: #020403;
+    --color-negro-dm: rgb(75, 75, 75);
+    --color_gris: #979797;
+    --color-blanco: #FFFFFF;
+    --color-blanco-traslicido: #FFFFFFBB;
+    --color-ericsson: #00285e;
+    --color-azulclaro: #03397c;
+    --color-azuloscuro: #041c42;
+    --color-amarillo: rgb(243, 235, 11);
+}
+
+/*-- RESET de la pagina --*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header__nav {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--color-azulclaro);
+    border-radius: 5px;
+}
+
+/* nav {
+    background-color: var(--color-blanco);
+    opacity: 0.5;
+
+} */
+.btn__dm-text {
+    color: yellow;
+}
+
+.nav__menu {
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--color-blanco);
+    font-size: 1.2rem;
+}
+
+.nav__link:hover {
+    color: var(--color-amarillo);
+    text-decoration: underline;
+}
+
+
+
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/wallpaper-12.jpg);
+    margin: 0;
+    padding: 0;
+    z-index: -1000;
+}
+
+.particles__normal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0;
+    padding: 0;
+    z-index: -900;
+}
+
+.particles__dm {
+    opacity: 0.7;
+}
+
+.btn__dm-text {
+    position: absolute;
+    top: 12px;
+    width: 35px;
+    height: 20px;
+    background-image: url(./assets/sol-luna.png);
+    background-repeat: no-repeat;
+    background-size: 35px 20px;
+    cursor: pointer;
+}
+
+.btn__dm-text-dm {
+    position: absolute;
+    top: 12px;
+    width: 35px;
+    height: 20px;
+    background-image: url(./assets/luna-sol.png);
+    background-repeat: no-repeat;
+    background-size: 35px 20px;
+    cursor: pointer;
+}
+
+.home__data,
+.about__container-text {
+    width: 90%;
+    max-width: 1024px;
+    padding: 30px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--color-blanco-traslicido);
+    border-radius: 10px;
+}
+
+.dark__mode {
+    background-color: var(--color-negro-dm);
+    color: var(--color-blanco);
+}
+
+.home__item {
+    margin: 5px 70px;
+}
+
+.home__pic {
+    width: 260px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.home__item-data {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    background: var(--color-azulclaro);
+    color: var(--color-blanco);
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.home__in {
+    padding: 10px 13px;
+}
+
+.home__in-link,
+.home__cv-link {
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+.home__cv {
+    padding: 10px 10px;
+    color: var(--color-blanco);
+}
+
+button:hover {
+    box-shadow: 2px 2px 5px rgb(49, 49, 49);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.home__name {
+    margin: 30px;
+}
+
+.home__name-soy {
+    font-size: 2rem;
+}
+
+.home__name-name {
+    font-size: 3rem;
+    color: var(--color-azulclaro);
+}
+
+.home__profession-1,
+.home__profession-2 {
+    font-size: 1.5rem;
+}
+
+.about__title,
+.skils__title,
+.portfolio__title,
+.contacto__title {
+    width: 90%;
+    max-width: 1024px;
+    margin: 30px auto 5px auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--color-azulclaro);
+    border-radius: 5px;
+    color: var(--color-blanco);
+    font-size: 1.5rem;
+    padding: 5px 0;
+}
+
+.about__info {
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: justify;
+    margin: 10px 30px;
+}
+.tecnologias {
+    width: 100%;
+    height: 360px;
+}
+.tecnologias1__img,
+.tecnologias2__img,
+.tecnologias3__img {
+    width: 150px;
+    height: auto;
+}
+
+.tecnologias1__container,
+.tecnologias2__container,
+.tecnologias3__container,
+.idiomas__box {
+    width: 100%;
+    padding: 30px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--color-blanco);
+    border-radius: 10px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+    margin-top: 50px;
+}
+.tecno__slider-dm{
+    background-color: var(--color-negro-dm);
+}
+
+.tecnologias__container {
+    position: relative;
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tecnologias1__container {
+    opacity: 1;
+}
+
+/*-- SLIDE IDIOMAS --*/
+.idiomas__barra-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 250px;
+    gap: 10px;
+}
+.idiomas__box-dm {
+color: var(--color-blanco);
+background-color: var(--color-negro-dm);
+}
+
+.idiomas__container-box {
+    width: 300px;
+    height: 150px;
+    padding-top: 40px;
+}
+
+.idiomas__box-title {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px;
+}
+.idiomas_cuadro {
+    width: 40px;
+    height: 12px;
+    border: 1px solid var(--color-blanco);
+}
+
+
+.idioma__lleno {
+    background-color: var(--color-azulclaro);
+}
+.idioma__vacio{
+    background-color: var(--color_gris);
+}
+.slider__skils {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.slider__btn {
+    background-color: var(--color-azulclaro);
+    color: var(--color-blanco);
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.slider__btn>a {
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+.tecnologias__container div:target {
+    opacity: 1;
+}
+
+/*-- SECCION PORTAFOLIO / PROYECTOS --*/
+.portafolio,
+.contacto {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.portafolio__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.portafolio__container,
+.contacto__container {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: var(--color-blanco-traslicido);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.portafolio__container-dm {
+    background-color: var(--color-negro-dm);
+    color: var(--color-blanco);
+}
+
+.portafolio__item {
+    width: 350px;
+    height: 300px;
+    padding: 20px;
+}
+
+.portafolio__img-p1,
+.portafolio__img-p2,
+.portafolio__img-p3,
+.portafolio__img-p4 {
+    width: 340px;
+    height: 210px;
+    margin: 0 auto;
+    box-shadow: 8px 8px 10px gray;
+}
+
+.portafolio__img-p1 {
+    background-image: url(./assets/proyecto-pokemon-peq.jpg);
+    background-repeat: round ;
+}
+
+.portafolio__img-p2 {
+    background-image: url(./assets/proyecto-rym-peq.jpg);
+    background-repeat: round ;
+}
+
+.portafolio__img-p3 {
+    background-image: url(./assets/proyecto-clima-peq.jpg);
+    background-repeat: round ;
+}
+
+.portafolio__img-p4 {
+    background-image: url(./assets/proyecto-citas-peq.jpg);
+    background-repeat: round ;
+}
+
+.portafolio__hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-blanco);
+    font-size: 1.2rem;
+    width: 340px;
+    height: 210px;
+    background-color: #11111100;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.portafolio__hover:hover {
+    width: 340px;
+    height: 210px;
+    background-color: var(--color-azulclaro);
+    transform: translateY(0);
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+}
+.portafolio__hover-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.portafolio__hover-link{
+background-color: var(--color-azuloscuro);
+color: var(--color-blanco);
+border: 1px solid var(--color-blanco);
+margin-top: 30px;
+padding: 5px 8px;
+font-size: 0.8rem;
+font-weight: bold;
+text-decoration: none;
+border-radius: 4px;
+}
+.portafolio__hover-link:hover{
+    color: var(--color-azuloscuro);
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-azuloscuro);
+    text-decoration: none;
+}
+/*-- SECCION CONTACTO --*/
+.contacto__container {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--color-blanco-traslicido);
+    margin-bottom: 50px;
+}
+.contacto__container-dm{
+    background-color: var(--color-negro-dm);
+    color: var(--color-blanco);
+}
+
+.contacto__img {
+    width: 100px;
+}
+
+.contacto__img:hover {
+    transform: scale(1.05);
+}
+
+.contacto__item {
+    width: 200px;
+    margin: 30px auto;
+    padding-bottom: 15px;
+}
