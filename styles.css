@@ -235,7 +235,10 @@ button:hover {
     font-size: 1.5rem;
     padding: 5px 0;
 }
-
+.portfolio__title,
+.contacto__title {
+    width: 100%;
+}
 .about__info {
     font-size: 1.2rem;
     font-weight: normal;
@@ -357,7 +360,9 @@ background-color: var(--color-negro-dm);
     max-width: 1024px;
     margin: 0 auto;
 }
-.portafolio__title {
+.portafolio__title,
+.title__container {
+    width: 100%;
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 700;
@@ -365,7 +370,7 @@ background-color: var(--color-negro-dm);
 
 .portafolio__container,
 .contacto__container {
-    width: 90%;
+    width: 100%;
     max-width: 1024px;
     margin: 0 auto;
     background-color: var(--color-blanco-traslicido);
@@ -493,6 +498,7 @@ border-radius: 4px;
     padding-bottom: 15px;
     font-size: 14px;
 }
+
 @media (max-width: 942px){
     .portafolio {
         margin-top: 150px;
