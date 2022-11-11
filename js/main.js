@@ -1,3 +1,27 @@
+//-- JavaScript ventana Modal para MENU NAVEGACION --//
+const openMenu = document.querySelector('.open__menu-modal');
+const menu = document.querySelector('.modal__menu');
+const closeMenu = document.querySelector('.modal__menu-close');
+const header = document.getElementById('header')
+
+openMenu.addEventListener('click', (e) => {
+    e.preventDefault();
+    menu.classList.add('modal--menu-show');
+})
+
+closeMenu.addEventListener('click', (e) => {
+    e.preventDefault();
+    menu.classList.remove('modal--menu-show');
+})
+
+header.addEventListener('click', e => {
+     if (e.target.closest('.nav__link')) {
+        menu.classList.remove('modal--menu-show')
+    }
+
+})
+
+
 
 const activeDM = document.querySelector('.btn__dm');
 const fondoDM = document.querySelector('.particles__normal');
