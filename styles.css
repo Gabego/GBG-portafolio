@@ -114,22 +114,22 @@ ul {
 .btn__dm-text {
     position: absolute;
     top: 12px;
-    width: 35px;
-    height: 20px;
-    background-image: url(./assets/sol-luna.png);
+    width: 26px;
+    height: 26px;
+    background-image: url(./assets/sol2.png);
     background-repeat: no-repeat;
-    background-size: 35px 20px;
+    background-size: 26px 26px;
     cursor: pointer;
 }
 
 .btn__dm-text-dm {
     position: absolute;
     top: 12px;
-    width: 35px;
-    height: 20px;
-    background-image: url(./assets/luna-sol.png);
+    width: 26px;
+    height: 26px;
+    background-image: url(./assets/moon2.png);
     background-repeat: no-repeat;
-    background-size: 35px 20px;
+    background-size: 26px 26px;
       cursor: pointer;
 }
 
@@ -182,16 +182,15 @@ button {
     padding: 10px 13px;
 }
 
-.home__in-link,
-.home__cv-link {
+.home__in-link {
     color: var(--color-blanco);
     text-decoration: none;
 }
 
-.home__cv {
+/* .home__cv {
     padding: 10px 10px;
     color: var(--color-blanco);
-}
+} */
 
 button:hover {
     box-shadow: 2px 2px 5px rgb(49, 49, 49);
@@ -216,7 +215,43 @@ button:hover {
 .home__profession-2 {
     font-size: 1.5rem;
 }
-
+.home__cv {
+    background-color: var(--color-azulclaro);;
+    width: 140px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    border-radius: 15px;
+   align-items: center;
+   margin: 0 auto;
+   margin-top: 40px;
+   color: var(--color-blanco);
+  
+  }
+  .bandera__esp {
+    width: 50px;
+    height: 30px;
+    background-image: url(./assets/ESP.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px 0 0 20px;
+  }
+  .home__cv-link {
+    width: 40px;
+    height: 30px;
+    font-size: 24px;
+    cursor: default ;
+  }
+  .bandera__uk {
+    width: 50px;
+    height: 30px;
+    background-image: url(./assets/UK.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0 20px 20px 0;
+  }
 .about__title,
 .skils__title,
 .portfolio__title,
