@@ -28,6 +28,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/*-- CONFIGURACION BARRA NAVEGACION ---*/
 .header__nav {
     width: 90%;
     max-width: 1024px;
@@ -41,14 +42,7 @@ body {
     border-radius: 5px;
 }
 
-/* nav {
-    background-color: var(--color-blanco);
-    opacity: 0.5;
 
-} */
-/* .btn__dm-text {
-    color: yellow;
-} */
 .icono__menu {
     display: none;
 }
@@ -78,7 +72,7 @@ ul {
 
 
 
-
+/*-- CONFIGURACION EFECTO PARTICULAS ---*/
 #particles-js {
     position: fixed;
     top: 0;
@@ -106,11 +100,13 @@ ul {
 .particles__dm {
     opacity: 0.7;
 }
+
 .btn__dm {
     width: 90%;
     max-width: 1024px;
 
 }
+
 .btn__dm-text {
     position: absolute;
     top: 12px;
@@ -130,9 +126,9 @@ ul {
     background-image: url(./assets/moon2.png);
     background-repeat: no-repeat;
     background-size: 26px 26px;
-      cursor: pointer;
+    cursor: pointer;
 }
-
+/*-- SECCION HOME ---*/
 .home__data,
 .about__container-text {
     width: 90%;
@@ -147,6 +143,7 @@ ul {
     border-radius: 10px;
 }
 
+/*-dark mode-*/
 .dark__mode {
     background-color: var(--color-negro-dm);
     color: var(--color-blanco);
@@ -187,11 +184,6 @@ button {
     text-decoration: none;
 }
 
-/* .home__cv {
-    padding: 10px 10px;
-    color: var(--color-blanco);
-} */
-
 button:hover {
     box-shadow: 2px 2px 5px rgb(49, 49, 49);
     transform: scale(1.05);
@@ -215,8 +207,10 @@ button:hover {
 .home__profession-2 {
     font-size: 1.5rem;
 }
+
 .home__cv {
-    background-color: var(--color-azulclaro);;
+    background-color: var(--color-azulclaro);
+    ;
     width: 140px;
     height: 30px;
     display: flex;
@@ -224,34 +218,42 @@ button:hover {
     justify-content: space-between;
     border: none;
     border-radius: 15px;
-   align-items: center;
-   margin: 0 auto;
-   margin-top: 40px;
-   color: var(--color-blanco);
-  
-  }
-  .bandera__esp {
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    color: var(--color-blanco);
+
+}
+
+.bandera__esp {
     width: 50px;
     height: 30px;
     background-image: url(./assets/ESP.png);
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 20px 0 0 20px;
-  }
-  .home__cv-link {
+}
+
+.home__cv-link {
     width: 40px;
     height: 30px;
     font-size: 24px;
-    cursor: default ;
-  }
-  .bandera__uk {
+    cursor: default;
+}
+
+.bandera__uk {
     width: 50px;
     height: 30px;
     background-image: url(./assets/UK.png);
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 0 20px 20px 0;
-  }
+}
+
+.section {
+    margin-top: 120px;
+}
+
 .about__title,
 .skils__title,
 .portfolio__title,
@@ -270,20 +272,24 @@ button:hover {
     font-size: 1.5rem;
     padding: 5px 0;
 }
+
 .portfolio__title,
 .contacto__title {
     width: 100%;
 }
+
 .about__info {
     font-size: 1.2rem;
     font-weight: normal;
     text-align: justify;
     margin: 10px 30px;
 }
+/*-- SECCION TECNOLOGIAS - HABILIDADES --*/
 .tecnologias {
     width: 100%;
     height: 360px;
 }
+
 .tecnologias1__img,
 .tecnologias2__img,
 .tecnologias3__img {
@@ -309,7 +315,8 @@ button:hover {
     transition: opacity 0.5s;
     margin-top: 50px;
 }
-.tecno__slider-dm{
+
+.tecno__slider-dm {
     background-color: var(--color-negro-dm);
 }
 
@@ -336,9 +343,10 @@ button:hover {
     width: 250px;
     gap: 10px;
 }
+
 .idiomas__box-dm {
-color: var(--color-blanco);
-background-color: var(--color-negro-dm);
+    color: var(--color-blanco);
+    background-color: var(--color-negro-dm);
 }
 
 .idiomas__container-box {
@@ -352,6 +360,7 @@ background-color: var(--color-negro-dm);
     font-weight: 700;
     padding: 10px;
 }
+
 .idiomas_cuadro {
     width: 40px;
     height: 12px;
@@ -362,9 +371,11 @@ background-color: var(--color-negro-dm);
 .idioma__lleno {
     background-color: var(--color-azulclaro);
 }
-.idioma__vacio{
+
+.idioma__vacio {
     background-color: var(--color_gris);
 }
+
 .slider__skils {
     display: flex;
     flex-direction: row;
@@ -394,7 +405,9 @@ background-color: var(--color-negro-dm);
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
+    margin-top: 100px;
 }
+
 .portafolio__title,
 .title__container {
     width: 100%;
@@ -418,6 +431,7 @@ background-color: var(--color-negro-dm);
     padding-top: 20px;
     border-radius: 10px;
 }
+
 .portafolio__container-dm {
     background-color: var(--color-negro-dm);
     color: var(--color-blanco);
@@ -429,6 +443,31 @@ background-color: var(--color-negro-dm);
     padding: 0px;
 }
 
+
+.portafolio__img-p1 {
+    background-image: url(./assets/proyecto-pokemon-peq.jpg);
+    background-repeat: round;
+}
+
+.portafolio__img-p2 {
+    background-image: url(./assets/proyecto-rym-peq.jpg);
+    background-repeat: round;
+}
+
+.portafolio__img-p3 {
+    background-image: url(./assets/proyecto-clima-peq.jpg);
+    background-repeat: round;
+}
+
+
+.portafolio__container-img {
+    width: 300px;
+    height: 250px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
 .portafolio__img-p1,
 .portafolio__img-p2,
 .portafolio__img-p3,
@@ -437,73 +476,73 @@ background-color: var(--color-negro-dm);
     height: 200px;
     margin: 0 auto;
     box-shadow: 8px 8px 10px gray;
+    transition: all 1s;
+    transform: translatez(0px) rotateX(0deg);
+    transform-style: preserve-3d;
 }
 
 .portafolio__img-p1 {
     background-image: url(./assets/proyecto-pokemon-peq.jpg);
-    background-repeat: round ;
+    background-size: contain;
 }
 
 .portafolio__img-p2 {
     background-image: url(./assets/proyecto-rym-peq.jpg);
-    background-repeat: round ;
+    background-size: contain;
 }
 
 .portafolio__img-p3 {
     background-image: url(./assets/proyecto-clima-peq.jpg);
-    background-repeat: round ;
+    background-size: contain;
 }
 
 .portafolio__img-p4 {
     background-image: url(./assets/proyecto-citas-peq.jpg);
-    background-repeat: round ;
+    background-size: contain;
 }
 
 .portafolio__hover {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--color-blanco);
-    font-size: 1.2rem;
     width: 300px;
-    height: 210px;
-    background-color: #11111100;
-    transform: translateY(-20px);
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+    height: 200px;
+    padding: 0 15px;
+    padding-top: 15px;
+    box-shadow: 8px 8px 10px gray;
+    color: white;
+    background-color: var(--color-azulclaro);
+    transform: translatez(-200px) rotatex(90deg);
+    transform-origin: top center;
 }
 
-.portafolio__hover:hover {
-    width: 340px;
-    height: 210px;
-    background-color: var(--color-azulclaro);
-    transform: translateY(0);
-    opacity: 0.8;
-    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out;
+.portafolio__img-p1:hover,
+.portafolio__img-p2:hover,
+.portafolio__img-p3:hover,
+.portafolio__img-p4:hover {
+    transform-origin: bottom center;
+    transform: translateY(-10px) translatez(-200px) rotateX(-94deg);
 }
-.portafolio__hover-title{
+
+.portafolio__hover-link {
+    background-color: var(--color-azuloscuro);
+    color: var(--color-blanco);
+    border: 1px solid var(--color-blanco);
+    font-size: 0.8rem;
+    display: block;
+    width: 100px;
+    padding: 6px 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+
+.portafolio__hover-title {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 20px;
 }
-.portafolio__hover-link{
-background-color: var(--color-azuloscuro);
-color: var(--color-blanco);
-border: 1px solid var(--color-blanco);
-margin-top: 30px;
-padding: 5px 8px;
-font-size: 0.8rem;
-font-weight: bold;
-text-decoration: none;
-border-radius: 4px;
-}
-.portafolio__hover-link:hover{
-    color: var(--color-azuloscuro);
-    background-color: var(--color-blanco);
-    border: 1px solid var(--color-azuloscuro);
-    text-decoration: none;
-}
+
 /*-- SECCION CONTACTO --*/
 .contacto__container {
     font-size: 18px;
@@ -514,7 +553,8 @@ border-radius: 4px;
     background-color: var(--color-blanco-traslicido);
     margin-bottom: 50px;
 }
-.contacto__container-dm{
+
+.contacto__container-dm {
     background-color: var(--color-negro-dm);
     color: var(--color-blanco);
 }
@@ -534,11 +574,12 @@ border-radius: 4px;
     font-size: 14px;
 }
 
-@media (max-width: 942px){
+@media (max-width: 942px) {
     .portafolio {
         margin-top: 150px;
     }
 }
+
 @media (max-width: 800px) {
     .open__menu-modal {
         width: 34px;
@@ -557,7 +598,7 @@ border-radius: 4px;
         border-radius: 50%;
         cursor: pointer;
     }
-    
+
     .modal__menu {
         position: fixed;
         top: 0;
@@ -571,6 +612,7 @@ border-radius: 4px;
         opacity: 0;
         pointer-events: none;
     }
+
     .modal__menu-close {
         text-align: left;
         display: block;
@@ -583,6 +625,7 @@ border-radius: 4px;
         margin-top: 6px;
         cursor: pointer;
     }
+
     ul {
         list-style: none;
         display: flex;
@@ -590,17 +633,18 @@ border-radius: 4px;
         gap: 15px;
         justify-content: center;
     }
+
     .nav__menu {
         margin: auto;
         font-size: 20px;
     }
-    
+
     .nav__link:hover {
         color: yellow;
         font-weight: 400;
         text-decoration: underline;
     }
-    
+
     .modal--menu-show {
         opacity: 1;
         pointer-events: unset;
@@ -608,65 +652,70 @@ border-radius: 4px;
         --transform: translateY(0);
         --transition: transform 1s 1s;
     }
+
     .icono_menu {
         align-self: flex-start;
     }
-.btn__dm-text {
-  top: 5px;
-}
+
+    .btn__dm-text {
+        top: 5px;
+    }
+
     .portafolio {
         margin-top: 200px;
     }
 
-  }
+}
 
-  @media (max-width: 572px) {
-    /* .home__pic {
-        width: 200px;
-        height: 200px;
-    } */
+@media (max-width: 572px) {
+
     .home__pic {
         width: 150px;
         height: 150px;
     }
+
     .home__name-soy {
         font-size: 28px;
     }
+
     .home__name-name {
         font-size: 36px;
     }
+
     .home__profession-1,
     .home__profession-2 {
         font-size: 20px;
     }
+
     .portafolio {
         margin-top: 300px;
     }
+
     .slider__skils {
         gap: 5px;
     }
-    /* .portafolio__container {
-         margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-         gap: 10px;
-        justify-content: center;
 
-    } */
     .slider__btn {
         font-size: 12px;
     }
+
     .portafolio__item {
         width: 280px;
         height: 250px;
         padding: 10px;
     }
+
     .portafolio__img-p1,
     .portafolio__img-p2,
     .portafolio__img-p3,
     .portafolio__img-p4 {
         width: 250px;
         height: 200px;
+    }
 
+    .portafolio__hover {
+        width: 250px;
+        height: 200px;
+        font-size: 12px;
     }
 }
